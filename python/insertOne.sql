@@ -1,1 +1,3 @@
--- NOT IMPLEMENTED
+-- insertOne.sql
+INSERT INTO tblUsuarios (usuario, nombre, sexo, nivel, email, telefono, marca, compañia, saldo, activo)
+VALUES (?,?,?,?,?,?,?,?,?,?);
