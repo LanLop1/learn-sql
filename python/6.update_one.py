@@ -3,7 +3,7 @@ import sqlite3
 def insert_one(usuario, nombre, sexo, nivel, email, telefono, marca, compañia, saldo, activo, id):
     try:
         # Conectar a la base de datos
-        conn = sqlite3.connect('<nombre_de_db>.sqlite')
+        conn = sqlite3.connect('database.sqlite')
         cur = conn.cursor()
 
         # Leer el archivo SQL
