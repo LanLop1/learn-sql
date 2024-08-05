@@ -3,7 +3,7 @@ import sqlite3
 
 def crear_tabla():
   # Conectar a la base de datos (crea el archivo si no existe)
-  conn = sqlite3.connect('<nombre_de_db>.sqlite')
+  conn = sqlite3.connect('database.sqlite')
 
   # Crear un cursor
   cur = conn.cursor()
@@ -30,7 +30,7 @@ def crear_tabla():
 
 def confirmar_creacion_de_tabla():
   # Conectar a la base de datos (crea el archivo si no existe)
-  conn = sqlite3.connect('<nombre_de_db>.sqlite')
+  conn = sqlite3.connect('database.sqlite')
   cur = conn.cursor()
 
   # Leer y ejecutar el archivo SQL

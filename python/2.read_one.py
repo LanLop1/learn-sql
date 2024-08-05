@@ -2,7 +2,7 @@ import sqlite3
 
 def read_one(id):
     # Conectar a la base de datos
-    conn = sqlite3.connect('<nombre_de_db>.sqlite')
+    conn = sqlite3.connect('database.sqlite')
     cur = conn.cursor()
 
     # Leer el archivo SQL
