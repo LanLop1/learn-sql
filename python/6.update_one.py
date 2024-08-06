@@ -1,6 +1,6 @@
 import sqlite3
 
-def insert_one(usuario, nombre, sexo, nivel, email, telefono, marca, compañia, saldo, activo, id):
+def insert_one(usuario, nombre, sexo, nivel, email, telefono, marca, compania, saldo, activo, id):
     try:
         # Conectar a la base de datos
         conn = sqlite3.connect('database.sqlite')
@@ -11,7 +11,7 @@ def insert_one(usuario, nombre, sexo, nivel, email, telefono, marca, compañia, 
             sql_query = sql_file.read()
 
         # Ejecutar la consulta
-        cur.execute(sql_query, (usuario, nombre, sexo, nivel, email, telefono, marca, compañia, saldo, activo, id))
+        cur.execute(sql_query, (usuario, nombre, sexo, nivel, email, telefono, marca, compania, saldo, activo, id))
 
         # Confirmar la transacción
         conn.commit()
