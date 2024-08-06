@@ -1,1 +1,4 @@
--- NOT IMPLEMENTED
+UPDATE tblUsuarios
+SET saldo = ?;
+-- WHERE idx = ?;
+-- WHERE idx BETWEEN ? AND ?;
